@@ -19,3 +19,7 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: "~/test"
           EXCLUDE: "/dist/, /node_modules/"
+    
+    - name: Setup Symfony
+      working-directory: ./dir
+      run: cat test.txt
